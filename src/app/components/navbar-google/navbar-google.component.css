@@ -1,0 +1,19 @@
+*{
+  color: #7f7f7f;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  margin-inline-start: auto;
+}
+
+.nav-item {
+font-weight: 700;
+margin: auto 2.5vw;
+}
+
+#nameNav {
+font-weight: 600;
+}
