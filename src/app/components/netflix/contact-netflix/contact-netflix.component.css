@@ -1,0 +1,13 @@
+.darkbg {
+  background-color: #000;
+  border-bottom: 8px solid #222222;
+}
+
+img {
+  width: 50px;
+}
+
+img:hover {
+  background-color: #e50914;
+  border-radius: 5px;
+}

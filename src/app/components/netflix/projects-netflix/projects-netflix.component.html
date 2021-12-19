@@ -1,0 +1,38 @@
+<div class="darkbg">
+  <div class="container d-sm-flex justify-content-around align-items-center">
+    <div>
+      <h1>Projects.</h1>
+      <p>Check out some of my cool creations.</p>
+      <a href="https://github.com/Dylan-Harden3" target="_blank" class="btn btn-lg redbg"> <img src="assets/images/netflix/github.png" id="github-icon" alt=""> GitHub</a>
+    </div>
+    <ngb-carousel *ngIf="images" class="my-5">
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper shadow">
+          <img [src]="images[0]">
+        </div>
+        <div class="carousel-caption">
+          <h5 class="my-3">TravelEZ Travel App</h5>
+          <a href="https://github.com/Dylan-Harden3/TravelEZ" target="_blank" class="btn btn-sm redbg">Github Repo</a>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="images[1]" alt="Random second slide">
+        </div>
+        <div class="carousel-caption">
+          <h5 class="shadow my-3">Media Streaming Database</h5>
+          <a href="https://github.com/Dylan-Harden3/Media-Database" target="_blank" class="btn btn-sm redbg">Github Repo</a>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="images[2]" alt="Random third slide">
+        </div>
+        <div class="carousel-caption">
+          <h5 class="my-3">Personal Website</h5>
+          <a href="https://github.com/Dylan-Harden3/Portfolio-Website" target="_blank" class="btn btn-sm redbg">Github Repo</a>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div>

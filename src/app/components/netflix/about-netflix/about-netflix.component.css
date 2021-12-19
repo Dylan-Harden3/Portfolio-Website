@@ -1,0 +1,28 @@
+.darkbg {
+  background-color: #000;
+  border-bottom: 8px solid #222222;
+}
+
+img {
+  width: 25vw;
+  min-width:  200px;
+  box-shadow: 0 0 30px #7f7f7f ;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+p{
+line-height: 30px;
+font-weight: 100;
+}
+
+@media screen and (max-width: 575px) {
+  *{
+    text-align: center;
+  }
+  #intro {
+    width: 100% !important;
+  }
+}
