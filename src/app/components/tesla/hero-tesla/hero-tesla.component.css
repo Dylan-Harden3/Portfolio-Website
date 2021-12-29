@@ -1,0 +1,104 @@
+.bg-hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url('images/roadster6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+Tesla Colors: Deep Blue: #00008b, Red: #e82127
+Stats: 500+ Hours coding, 50 Projects Completed, 6 Awards, 500+ network
+*/
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h4 {
+  font-family: TESLA;
+}
+
+nav a {
+  color: #181b21;
+  font-weight: 500;
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 21px;
+}
+
+nav a:hover {
+  background-color: hsla(0,0%,0%,.1);
+  border-radius: 8px;
+  cursor:pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  color: #393c41;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+h2 {
+  color: rgb(92,93,97);
+  line-height: 19.796px;
+  font-size: 17px;
+}
+
+#tesla-intro {
+  margin-top: 10%;
+}
+
+.grey-btn {
+  background-color: rgba(23, 26, 32, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  border-radius: 32px;
+  color: #fff;
+  padding: 4px 24px;
+}
+
+.white-btn {
+  background-color: rgba(127, 127, 127, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  border-radius: 32px;
+  color: rgb(57, 60, 65);
+  padding: 4px 24px;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 38%;
+}
+
+#tesla-nav {
+  text-decoration:underline;
+  text-decoration-color: #e82127;
+}
+
+@media screen and (max-width:575px) {
+    h4 {
+      text-align: center;
+    }
+    h1 {
+      color: #4c4c4c;
+    }
+    h2 {
+      color: #7f7f7f;
+    }
+    .white-btn {
+      color: #fff !important;
+    }
+}

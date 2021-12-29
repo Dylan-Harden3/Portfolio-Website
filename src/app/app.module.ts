@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { Router, RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavbarGoogleComponent } from './components/google/navbar-google/navbar-google.component';
 import { HeroGoogleComponent } from './components/google/hero-google/hero-google.component';
 import { AboutGoogleComponent } from './components/google/about-google/about-google.component';
-import { TeslaComponent } from './components/tesla/tesla.component';
 import { ProjectsGoogleComponent } from './components/google/projects-google/projects-google.component';
 import { ContactGoogleComponent } from './components/google/contact-google/contact-google.component';
 import { HeroNetflixComponent } from './components/netflix/hero-netflix/hero-netflix.component';
@@ -17,6 +17,13 @@ import { SkillsNetflixComponent } from './components/netflix/skills-netflix/skil
 import { ProjectsNetflixComponent } from './components/netflix/projects-netflix/projects-netflix.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactNetflixComponent } from './components/netflix/contact-netflix/contact-netflix.component';
+import { TeslaComponent } from './components/tesla/tesla/tesla.component';
+import { HeroTeslaComponent } from './components/tesla/hero-tesla/hero-tesla.component';
+import { AboutTeslaComponent } from './components/tesla/about-tesla/about-tesla.component';
+import { SkillsTeslaComponent } from './components/tesla/skills-tesla/skills-tesla.component';
+import { ProjectsTeslaComponent } from './components/tesla/projects-tesla/projects-tesla.component';
+import { FooterTeslaComponent } from './components/tesla/footer-tesla/footer-tesla.component';
+import { SearchComponent } from './components/search/search/search.component';
 
 const appRoutes: Routes = [
   {
@@ -30,6 +37,10 @@ const appRoutes: Routes = [
   {
     path : 'netflix',
     component : NetflixComponent
+  },
+  {
+    path : 'search',
+    component : SearchComponent
   }
 ]
 @NgModule({
@@ -38,7 +49,6 @@ const appRoutes: Routes = [
     NavbarGoogleComponent,
     HeroGoogleComponent,
     AboutGoogleComponent,
-    TeslaComponent,
     ProjectsGoogleComponent,
     ContactGoogleComponent,
     HeroNetflixComponent,
@@ -47,12 +57,19 @@ const appRoutes: Routes = [
     AboutNetflixComponent,
     SkillsNetflixComponent,
     ProjectsNetflixComponent,
-    ContactNetflixComponent
+    ContactNetflixComponent,
+    TeslaComponent,
+    HeroTeslaComponent,
+    AboutTeslaComponent,
+    SkillsTeslaComponent,
+    ProjectsTeslaComponent,
+    FooterTeslaComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,39 @@
+.darkbg {
+  background-color: black;
+  width: 100%;
+}
+
+.picsum-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+ngb-carousel {
+  width: 50%;
+}
+
+hr {
+background-color: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+img {
+  width: 50%;
+}
+
+@media screen and (max-width:767px){
+  ngb-carousel {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width:575px){
+  ngb-carousel {
+    width: 100%;
+  }
+}

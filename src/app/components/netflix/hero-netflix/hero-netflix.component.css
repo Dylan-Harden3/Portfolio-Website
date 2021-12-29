@@ -67,7 +67,7 @@ a:hover {
 }
 
 #netflix {
-  outline: 5px solid #b2b2b2;
+  outline: 1px solid #fff;
 }
 
 #theme-icons img {
@@ -75,7 +75,7 @@ a:hover {
   height: 40px;
   padding: 5px;
   border-radius: 50%;
-  background-color: #e5e5e5;
+  /* border: 1px solid #fff; */
 }
 
 #theme-icons img {

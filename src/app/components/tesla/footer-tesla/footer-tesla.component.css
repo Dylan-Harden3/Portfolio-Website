@@ -1,0 +1,50 @@
+.darkbg {
+  width: 100%;
+  background-color: #000;
+}
+
+hr {
+  background-color: #fff;
+}
+
+img {
+  width: 50px;
+}
+
+*{
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+#contact-pages {
+  display: inline-block;
+  text-align: left;
+}
+
+.col {
+  display: inline-block;
+  text-align: left;
+}
+
+/* .col div {
+  width: 50%;
+} */
+.col div img {
+  float: left;
+  margin-left: 25%;
+}
+
+a:hover {
+  color: #E82127;
+}
+
+@media screen and (max-width:575px) {
+  img {
+    margin-left: 10% !important;
+  }
+  .mb-4 {
+    margin-bottom: 0 !important;
+  }
+}

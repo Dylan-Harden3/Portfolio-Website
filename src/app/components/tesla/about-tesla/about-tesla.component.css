@@ -1,0 +1,31 @@
+.darkbg {
+  background-color: black;
+}
+*{
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 21px;
+  padding: 16px 0;
+}
+
+ul {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+hr {
+  background-color: #fff;
+}
+
+@media screen and (max-width:575px){
+  ul {
+    max-width: 100%;
+  }
+}
