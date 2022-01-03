@@ -1,0 +1,82 @@
+<div class="whitebg">
+  <nav class="d-flex justify-content-between">
+    <div class="d-flex align-items-center">
+      <img routerLink="../" src="assets/images/search/smallLogo.PNG" alt="" height="50px" id="smallLogo">
+      <div id="smallSearch" class="d-flex align-items-center">
+        <img src="assets/images/search/searchIcon.png" width="24px" height="24px" alt="" class="mr-2">
+          <p id="searchText">about<span>|</span></p>
+          <img src="assets/images/search/mic.png" width="24px" height="24px" alt="" class="ml-auto">
+      </div>
+    </div>
+    <nav class="d-flex flex-row-reverse align-items-center">
+      <img src="assets/images/search/9.png" width="16px" height="16px"alt="" (click)="toggleThemes()" class="themes">
+      <a href="">resume</a>
+      <a href="mailto:dylanharden3@tamu.edu">email</a>
+    </nav>
+  </nav>
+  <div class="z-5 text-center"*ngIf="selected" id="themeMenu">
+    <h6 class="text-center py-2">Themes</h6>
+    <div class="row">
+      <div class="col" routerLink="">
+        <img src="assets/images/themeIcons/google.png" alt="">
+        <p>Google</p>
+      </div>
+      <div class="col" routerLink="/netflix">
+        <img src="assets/images/themeIcons/netflix.png" alt="">
+        <p>Netflix</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" routerLink="/amazon">
+        <img src="assets/images/themeIcons/amazon.png" alt="">
+        <p>Amazon</p>
+      </div>
+      <div class="col" routerLink="/tesla">
+        <img src="assets/images/themeIcons/tesla.png" alt="">
+        <p>Tesla</p>
+      </div>
+    </div>
+  </div>
+  <div class="container text-left d-flex justify-content-between mt-4">
+    <div class="result-wrapper">
+      <div class="result-section">
+        <a routerLink="../skills" class="result-title">My Skills</a>
+        <a routerLink="../skills" class="result-link">https://dylanharden/search > skills</a>
+        <p class="result-description">Eager to learn more and imporve every day. Familiar with OOP/Data Structures in C++, Python, and Java. Experienced in full stack web developement with tools such as Angular and Node.</p>
+      </div>
+      <div class="result-section">
+        <a routerLink="../education" class="result-title">My Education</a>
+        <a routerLink="../education" class="result-link">https://dylanharden/search > education</a>
+        <p class="result-description">Pursuing a Bachelor of Science in Computer Science at Texas A&M University.</p>
+      </div>
+      <div class="result-section">
+        <a routerLink="../projects" class="result-title">My Projects</a>
+        <a routerLink="../projects" class="result-link">https://dylanharden/search > projects</a>
+        <p class="result-description">Here you can explore some of my creations.</p>
+      </div>
+      <div class="result-section">
+        <p class="result-title">My Experience</p>
+        <p class="result-link">https://dylanharden/search > experience</p>
+        <p class="result-description">In the Summer of 2022 I will be joining Charles Schwab as a Full Stack Software Engineering Intern!</p>
+      </div>
+      <div class="result-contact">
+        <h3 class="my-1">Contact Me</h3>
+        <p class="my-2">Id love to get in touch!</p>
+        <div class="contact-btn btn btn-sm text-white m-2" routerLink="../contact"><b>Contact</b></div>
+      </div>
+    </div>
+    <div class="search-card h-100">
+      <img src="assets/images/search/dylan.jpg" alt="" width="100%">
+      <div class="search-card-content">
+        <h1>Dylan Harden</h1>
+        <p>Aspiring Software Engineer | Texas A&M Aggie | Athlete</p>
+        <hr>
+        <h6><b>Age :</b> 20</h6>
+        <h6><b>Birth Date : </b>03.20.2001</h6>
+        <h6><b>From : </b> Austin, Texas</h6>
+        <h6><b>Interests : </b> Front End Developement, Machine Learning/AI</h6>
+        <h6><b>Hobbies : </b> Ultra Distance Racing, Triathlon</h6>
+      </div>
+    </div>
+  </div>
+</div>

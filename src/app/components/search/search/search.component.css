@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.themes:hover {
+  cursor: pointer;
+}
+
+.whitebg {
+  background-color: #fff;
+  width: 100%;
+}
+
+#dicon {
+  border-radius: 50%;
+  background-color: #4285f4;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+}
+
+#dicon:hover {
+  cursor: pointer;
+}
+
+nav > * {
+  margin: 15px 15px;
+}
+
+nav a {
+  color: #222;
+}
+
+#searchBar {
+  width: 80%;
+  border: 1px solid #b2b2b2;
+  border-radius: 24px;
+  padding: 10px;
+}
+
+.linkbtn {
+  background-color: #f2f2f2;
+  color: #757575;
+}
+
+.linkbtn:hover {
+  color: #222;
+  border: 1px solid #757575;
+}
+
+#logo {
+  max-width: 90% !important;
+}
+
+#themeMenu {
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  background-color: #e2e2e2;
+  border-radius: 5px;
+  padding: 20px;
+  aspect-ratio: 1/1;
+}
+
+#searchText::before {
+  content: "Aspiring Software Engineer";
+  animation: switch 9s infinite;
+}
+
+span{
+
+  animation: blink 1s infinite;
+
+}
+
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes switch {
+  0%{
+    content: "Aspiring Software Engineer";
+  }
+  50%{
+    content: "Texas A&M Aggie";
+  }
+  100%{
+    content: "Athlete";
+  }
+}
+
+.col img {
+  width: 40px;
+  height: 40px;
+}
+
+.col {
+  padding: 10px;
+}
+
+.col:hover {
+  background-color: #b2b2b2;
+  border-radius: 5px;
+  cursor: pointer;
+}

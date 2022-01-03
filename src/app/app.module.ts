@@ -24,6 +24,11 @@ import { SkillsTeslaComponent } from './components/tesla/skills-tesla/skills-tes
 import { ProjectsTeslaComponent } from './components/tesla/projects-tesla/projects-tesla.component';
 import { FooterTeslaComponent } from './components/tesla/footer-tesla/footer-tesla.component';
 import { SearchComponent } from './components/search/search/search.component';
+import { AboutSearchComponent } from './components/search/about-search/about-search.component';
+import { SkillsSearchComponent } from './components/search/skills-search/skills-search.component';
+import { EducationSearchComponent } from './components/search/education-search/education-search.component';
+import { ProjectsSearchComponent } from './components/search/projects-search/projects-search.component';
+import { ContactSearchComponent } from './components/search/contact-search/contact-search.component';
 
 const appRoutes: Routes = [
   {
@@ -41,6 +46,26 @@ const appRoutes: Routes = [
   {
     path : 'search',
     component : SearchComponent
+  },
+  {
+    path : 'search/about',
+    component : AboutSearchComponent
+  },
+  {
+    path : 'search/skills',
+  component : SkillsSearchComponent
+  },
+  {
+    path : 'search/education',
+    component : EducationSearchComponent
+  },
+  {
+    path : 'search/projects',
+    component : ProjectsSearchComponent
+  },
+  {
+    path : 'search/contact',
+    component : ContactSearchComponent
   }
 ]
 @NgModule({
@@ -64,7 +89,12 @@ const appRoutes: Routes = [
     SkillsTeslaComponent,
     ProjectsTeslaComponent,
     FooterTeslaComponent,
-    SearchComponent
+    SearchComponent,
+    AboutSearchComponent,
+    SkillsSearchComponent,
+    EducationSearchComponent,
+    ProjectsSearchComponent,
+    ContactSearchComponent,
   ],
   imports: [
     BrowserModule,

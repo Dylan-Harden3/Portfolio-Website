@@ -1,1 +1,47 @@
-<p>search works!</p>
+<div class="whitebg">
+    <nav class="d-flex flex-row-reverse align-items-center">
+      <div routerLink="about" id="dicon" class="text-white d-flex align-items-center justify-content-center">
+        <h5>D</h5>
+      </div>
+      <img src="assets/images/search/9.png" width="16px" height="16px"alt="" (click)="toggleThemes()" class="themes">
+      <a href="">resume</a>
+      <a href="mailto:dylanharden3@tamu.edu">email</a>
+    </nav>
+    <div class="z-5 text-center"*ngIf="selected" id="themeMenu">
+      <h6 class="text-center py-2">Themes</h6>
+      <div class="row">
+        <div class="col" routerLink="">
+          <img src="assets/images/themeIcons/google.png" alt="">
+          <p>Google</p>
+        </div>
+        <div class="col" routerLink="/netflix">
+          <img src="assets/images/themeIcons/netflix.png" alt="">
+          <p>Netflix</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" routerLink="/amazon">
+          <img src="assets/images/themeIcons/amazon.png" alt="">
+          <p>Amazon</p>
+        </div>
+        <div class="col" routerLink="/tesla">
+          <img src="assets/images/themeIcons/tesla.png" alt="">
+          <p>Tesla</p>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="d-flex flex-column align-items-center mt-5">
+        <img src="assets/images/search/logo.PNG" width="400px" alt="" class="mt-5" id="logo">
+        <div class="d-flex align-items-center my-4" id="searchBar">
+          <img src="assets/images/search/searchIcon.png" width="24px" height="24px" alt="" class="mr-2">
+          <p id="searchText"><span>|</span></p>
+          <img src="assets/images/search/mic.png" width="24px" height="24px" alt="" class="ml-auto">
+        </div>
+      </div>
+      <div class="d-flex justify-content-around mx-auto w-25">
+        <a routerLink="about" class="btn btn-sm linkbtn">Learn More</a>
+        <a routerLink="contact" class="btn btn-sm linkbtn">Contact</a>
+      </div>
+    </div>
+</div>

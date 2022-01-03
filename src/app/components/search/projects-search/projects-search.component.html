@@ -1,0 +1,79 @@
+<div class="whitebg">
+  <nav class="d-flex justify-content-between">
+    <div class="d-flex align-items-center">
+      <img src="assets/images/search/smallLogo.PNG" alt="" height="50px" routerLink="../" id="smallLogo">
+      <div id="smallSearch" class="d-flex align-items-center">
+        <img src="assets/images/search/searchIcon.png" width="24px" height="24px" alt="" class="mr-2">
+          <p id="searchText">projects<span>|</span></p>
+          <img src="assets/images/search/mic.png" width="24px" height="24px" alt="" class="ml-auto">
+      </div>
+    </div>
+    <nav class="d-flex flex-row-reverse align-items-center">
+      <img src="assets/images/search/9.png" width="16px" height="16px"alt="" (click)="toggleThemes()" class="themes">
+      <a href="">resume</a>
+      <a href="mailto:dylanharden3@tamu.edu">email</a>
+    </nav>
+  </nav>
+  <div class="z-5 text-center"*ngIf="selected" id="themeMenu">
+    <h6 class="text-center py-2">Themes</h6>
+    <div class="row">
+      <div class="col" routerLink="">
+        <img src="assets/images/themeIcons/google.png" alt="">
+        <p>Google</p>
+      </div>
+      <div class="col" routerLink="/netflix">
+        <img src="assets/images/themeIcons/netflix.png" alt="">
+        <p>Netflix</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" routerLink="/amazon">
+        <img src="assets/images/themeIcons/amazon.png" alt="">
+        <p>Amazon</p>
+      </div>
+      <div class="col" routerLink="/tesla">
+        <img src="assets/images/themeIcons/tesla.png" alt="">
+        <p>Tesla</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-left d-flex justify-content-between mt-4">
+    <div class="result-wrapper">
+      <div class="result-section">
+        <a href="https://project3-travelez.herokuapp.com/" class="result-title">TravelEZ</a>
+        <a href="https://github.com/Dylan-Harden3/TravelEZ/" class="result-link">https://github.com/Dylan-Harden3 > TravelEZ</a>
+        <p class="result-description">Travel planning app where users can take a quiz or search hotels and flights.</p>
+      </div>
+      <div class="result-section">
+        <p class="result-title">Personal Website</p>
+        <a href="https://github.com/Dylan-Harden3/Portfolio-Website" class="result-link">https://github.com/Dylan-Harden3 > Personal Website</a>
+        <p class="result-description">Personal website with 5 themes to showcase skills and experience.</p>
+      </div>
+      <div class="result-section">
+        <p class="result-title">Media Database</p>
+        <a href="https://github.com/Dylan-Harden3/Media-Database" class="result-link">https://github.com/Dylan-Harden3 > Media Database</a>
+        <p class="result-description">Mock streaming database created from over 500,000 data points.</p>
+      </div>
+      <div class="result-contact">
+        <h3 class="my-1">Contact Me</h3>
+        <p class="my-2">Id love to get in touch!</p>
+        <div routerLink="../contact" class="contact-btn btn btn-sm text-white m-2"><b>Contact</b></div>
+      </div>
+    </div>
+    <div class="search-card h-100">
+      <img src="assets/images/search/projects.jpg" alt="" width="100%">
+      <div class="search-card-content">
+        <h2 class="pb-2">Projects</h2>
+        <hr>
+        <a routerLink="../about">about</a>
+        <hr>
+        <a routerLink="../skills">skills</a>
+        <hr>
+        <a routerLink="../education">education</a>
+        <hr>
+        <h6><b>projects</b></h6>
+      </div>
+    </div>
+  </div>
+</div>

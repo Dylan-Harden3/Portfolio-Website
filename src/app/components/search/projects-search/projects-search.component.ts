@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+  selector: 'app-projects-search',
+  templateUrl: './projects-search.component.html',
+  styleUrls: ['./projects-search.component.css']
 })
-export class SearchComponent implements OnInit {
+export class ProjectsSearchComponent implements OnInit {
 
   selected: boolean = false;
 

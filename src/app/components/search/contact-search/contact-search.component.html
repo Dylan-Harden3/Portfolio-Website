@@ -1,0 +1,78 @@
+<div class="whitebg">
+  <nav class="d-flex justify-content-between">
+    <div class="d-flex align-items-center">
+      <img routerLink="../" src="assets/images/search/smallLogo.PNG" alt="" height="50px" id="smallLogo">
+      <div id="smallSearch" class="d-flex align-items-center">
+        <img src="assets/images/search/searchIcon.png" width="24px" height="24px" alt="" class="mr-2">
+          <p id="searchText">contact<span>|</span></p>
+          <img src="assets/images/search/mic.png" width="24px" height="24px" alt="" class="ml-auto">
+      </div>
+    </div>
+    <nav class="d-flex flex-row-reverse align-items-center">
+      <img src="assets/images/search/9.png" width="16px" height="16px"alt="" (click)="toggleThemes()" class="themes">
+      <a href="">resume</a>
+      <a href="mailto:dylanharden3@tamu.edu">email</a>
+    </nav>
+  </nav>
+  <div class="z-5 text-center"*ngIf="selected" id="themeMenu">
+    <h6 class="text-center py-2">Themes</h6>
+    <div class="row">
+      <div class="col" routerLink="">
+        <img src="assets/images/themeIcons/google.png" alt="">
+        <p>Google</p>
+      </div>
+      <div class="col" routerLink="/netflix">
+        <img src="assets/images/themeIcons/netflix.png" alt="">
+        <p>Netflix</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col" routerLink="/amazon">
+        <img src="assets/images/themeIcons/amazon.png" alt="">
+        <p>Amazon</p>
+      </div>
+      <div class="col" routerLink="/tesla">
+        <img src="assets/images/themeIcons/tesla.png" alt="">
+        <p>Tesla</p>
+      </div>
+    </div>
+  </div>
+  <div class="container text-left d-flex justify-content-between mt-4">
+    <div class="result-wrapper">
+      <div class="result-section">
+        <a href="mailto: dylanharden3@tamu.edu" class="result-title">Email</a>
+        <p class="result-link">https://dylanharden/search/contact > email</p>
+        <p class="result-description">dylanharden3@tamu.edu</p>
+      </div>
+      <div class="result-section">
+        <p class="result-title">Phone</p>
+        <p class="result-link">https://dylanharden/search/contact > phone</p>
+        <p class="result-description">512 - 831 - 9441</p>
+      </div>
+      <div class="result-section">
+        <a href="https://www.linkedin.com/in/dylan-harden/" class="result-title">Linkedin</a>
+        <a href="https://www.linkedin.com/in/dylan-harden/" class="result-link">https://www.linkedin.com > dylan-harden</a>
+        <p class="result-description">https://www.linkedin.com/in/dylan-harden/</p>
+      </div>
+      <div class="result-section">
+        <a href="https://github.com/Dylan-Harden3" class="result-title">GitHub</a>
+        <a href="https://github.com/Dylan-Harden3" class="result-link">https://github.com > Dylan-Harden3</a>
+        <a class="result-description">https://github.com/Dylan-Harden3</a>
+      </div>
+    </div>
+    <div class="search-card h-100">
+      <img src="assets/images/search/dylan.jpg" alt="" width="100%">
+      <div class="search-card-content">
+        <h2 class="pb-2">Dylan Harden</h2>
+        <hr>
+        <a routerLink="../about">about</a>
+        <hr>
+        <a routerLink="../skills">skills</a>
+        <hr>
+        <a routerLink="../education">education</a>
+        <hr>
+        <a routerLink="../projects">projects</a>
+      </div>
+    </div>
+  </div>
+</div>

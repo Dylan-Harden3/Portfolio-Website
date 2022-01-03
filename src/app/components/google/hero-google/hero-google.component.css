@@ -33,5 +33,6 @@
   @media screen and (max-width:764.99px) {
     #heroImg {
       margin: 0 auto;
+      height: 300px;
     }
   }
