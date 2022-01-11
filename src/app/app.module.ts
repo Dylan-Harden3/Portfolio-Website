@@ -29,6 +29,8 @@ import { SkillsSearchComponent } from './components/search/skills-search/skills-
 import { EducationSearchComponent } from './components/search/education-search/education-search.component';
 import { ProjectsSearchComponent } from './components/search/projects-search/projects-search.component';
 import { ContactSearchComponent } from './components/search/contact-search/contact-search.component';
+import { AmazonComponent } from './components/amazon/amazon/amazon.component';
+import { HeroAmazonComponent } from './components/amazon/hero-amazon/hero-amazon.component';
 
 const appRoutes: Routes = [
   {
@@ -66,6 +68,10 @@ const appRoutes: Routes = [
   {
     path : 'search/contact',
     component : ContactSearchComponent
+  },
+  {
+    path : 'amazon',
+    component : AmazonComponent
   }
 ]
 @NgModule({
@@ -95,6 +101,8 @@ const appRoutes: Routes = [
     EducationSearchComponent,
     ProjectsSearchComponent,
     ContactSearchComponent,
+    AmazonComponent,
+    HeroAmazonComponent,
   ],
   imports: [
     BrowserModule,

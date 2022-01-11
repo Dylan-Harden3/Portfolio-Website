@@ -1,12 +1,14 @@
+/* Styles for Google Hero */
+
+*{
+  color: white;
+}
+
 #hero {
   background-image: url('img/bg2.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  }
-
-  *{
-    color: white;
   }
 
   #title{
