@@ -1,69 +1,118 @@
+<!-- Skills-Search -->
 <div class="whitebg">
+
   <nav class="d-md-flex justify-content-between">
+
     <div class="d-flex align-items-center">
+
       <img routerLink="../" src="assets/images/search/smallLogo.PNG" alt="" height="50px" id="smallLogo">
+
       <div id="smallSearch" class="d-flex align-items-center">
+
         <img src="assets/images/search/searchIcon.png" width="24px" height="24px" alt="" class="mr-2">
-          <p id="searchText">skills<span>|</span></p>
-          <img src="assets/images/search/mic.png" width="24px" height="24px" alt="" class="ml-auto">
+        <p id="searchText">skills<span>|</span></p>
+        <img src="assets/images/search/mic.png" width="24px" height="24px" alt="" class="ml-auto">
+
       </div>
+
     </div>
+
     <nav class="d-flex flex-row-reverse align-items-center">
+
       <img src="assets/images/search/9.png" width="16px" height="16px"alt="" (click)="toggleThemes()" class="themes">
       <a href="../../../../assets/resumes/dylanharden-google.pdf" target="_blank">resume</a>
       <a href="mailto:dylanharden3@tamu.edu">email</a>
+
     </nav>
+
   </nav>
+
   <div class="z-5 text-center"*ngIf="selected" id="themeMenu">
+
     <h6 class="text-center py-2">Themes</h6>
+
     <div class="row">
+
       <div class="col" routerLink="">
+
         <img src="assets/images/themeIcons/google.png" alt="">
         <p>Google</p>
+
       </div>
+
       <div class="col" routerLink="/netflix">
+
         <img src="assets/images/themeIcons/netflix.png" alt="">
         <p>Netflix</p>
+
       </div>
+
     </div>
+
     <div class="row">
+
       <div class="col" routerLink="/amazon">
+
         <img src="assets/images/themeIcons/amazon.png" alt="">
         <p>Amazon</p>
+
       </div>
+
       <div class="col" routerLink="/tesla">
+
         <img src="assets/images/themeIcons/tesla.png" alt="">
         <p>Tesla</p>
+
       </div>
+
     </div>
+
   </div>
 
   <div class="container text-left d-sm-flex justify-content-between mt-4">
+
     <div class="result-wrapper">
+
       <div class="result-section">
+
         <p class="result-title">Programming Languages</p>
         <p class="result-link">https://dylanharden/search > skills</p>
         <p class="result-description">I have experience using a variety of general purpose object oriented programming languages such as C++, Java, Python, and C#.</p>
+
       </div>
+
       <div class="result-section">
+
         <p href="" class="result-title">Web Developement</p>
         <p href="" class="result-link">https://dylanharden/search > skills</p>
         <p class="result-description">Through team projects I discovered a passion for full stack developement. The tools I know now are JavaScript, TypeScript, Angular, HTML/CSS, Bootstrap, Node/Express, and PostgreSQL.</p>
+
       </div>
+
       <div class="result-section">
+
         <p href="" class="result-title">Computer Science Knowledge</p>
         <p href="" class="result-link">https://dylanharden/search > skills</p>
         <p class="result-description">In my time at Texas A&M University I have gained exposure to a wide range of topics such as Agile/Scrum, Algorithm Analysis, Computer Organization, Operating Systems, and Functional Programming.</p>
+
       </div>
+
       <div class="result-contact">
+
         <h3 class="my-1">Contact Me</h3>
         <p class="my-2">Id love to get in touch!</p>
         <div routerLink="../contact" class="contact-btn btn btn-sm text-white m-2"><b>Contact</b></div>
+
       </div>
+
     </div>
+
     <div class="search-card h-100">
+
       <img src="assets/images/search/search-skills.png" alt="" width="100%">
+
       <div class="search-card-content">
+
         <h1 class="pb-2">Dylan Harden</h1>
         <hr>
         <a routerLink="../about">about</a>
@@ -73,7 +122,11 @@
         <a routerLink="../education">education</a>
         <hr>
         <a routerLink="../projects">projects</a>
+
       </div>
+
     </div>
+
   </div>
+
 </div>

@@ -1,81 +1,135 @@
+<!-- Education-Search -->
 <div class="whitebg">
+
   <nav class="d-md-flex justify-content-between">
+
     <div class="d-flex align-items-center">
+
       <img src="assets/images/search/smallLogo.PNG" alt="" height="50px" routerLink="../" id="smallLogo">
+
       <div id="smallSearch" class="d-flex align-items-center">
+
         <img src="assets/images/search/searchIcon.png" width="24px" height="24px" alt="" class="mr-2">
-          <p id="searchText">education<span>|</span></p>
-          <img src="assets/images/search/mic.png" width="24px" height="24px" alt="" class="ml-auto">
+        <p id="searchText">education<span>|</span></p>
+        <img src="assets/images/search/mic.png" width="24px" height="24px" alt="" class="ml-auto">
+
       </div>
+
     </div>
+
     <nav class="d-flex flex-row-reverse align-items-center">
+
       <img src="assets/images/search/9.png" width="16px" height="16px"alt="" (click)="toggleThemes()" class="themes">
       <a href="../../../../assets/resumes/dylanharden-google.pdf" target="_blank">resume</a>
       <a href="mailto:dylanharden3@tamu.edu">email</a>
+
     </nav>
+
   </nav>
+
   <div class="z-5 text-center"*ngIf="selected" id="themeMenu">
+
     <h6 class="text-center py-2">Themes</h6>
+
     <div class="row">
+
       <div class="col" routerLink="">
+
         <img src="assets/images/themeIcons/google.png" alt="">
         <p>Google</p>
+
       </div>
+
       <div class="col" routerLink="/netflix">
+
         <img src="assets/images/themeIcons/netflix.png" alt="">
         <p>Netflix</p>
+
       </div>
+
     </div>
+
     <div class="row">
+
       <div class="col" routerLink="/amazon">
+
         <img src="assets/images/themeIcons/amazon.png" alt="">
         <p>Amazon</p>
+
       </div>
+
       <div class="col" routerLink="/tesla">
+
         <img src="assets/images/themeIcons/tesla.png" alt="">
         <p>Tesla</p>
+
       </div>
+
     </div>
+
   </div>
 
   <div class="container text-left d-sm-flex justify-content-between mt-4">
+
     <div class="result-wrapper">
+
       <div class="result-section">
+
         <p class="result-title">Bachelor of Science</p>
         <p class="result-link">https://dylanharden/search > education</p>
         <p class="result-description">Im currently in my third year pursuing a Bachelor of Science in Computer Science.</p>
+
       </div>
+
       <div class="result-section">
+
         <p href="" class="result-title">Minors</p>
         <p href="" class="result-link">https://dylanharden/search > education</p>
         <p class="result-description">Im also pursuing minors in Math, Cybersecurity, and Game Development.</p>
+
       </div>
+
       <div class="result-section">
+
         <p href="" class="result-title">Relevant Courses</p>
         <p href="" class="result-link">https://dylanharden/search > education</p>
         <p class="result-description">Data Structures & Algorithms, Computer Systems, Software Engineering,
           Computer Organization, Design & Analysis of Algorithms, Computer Graphics, Linear Algebra, Calculus III, Discrete Mathematics.
           </p>
+
+        </div>
+
+        <div class="result-contact">
+
+          <h3 class="my-1">Contact Me</h3>
+          <p class="my-2">Id love to get in touch!</p>
+
+          <div routerLink="../contact" class="contact-btn btn btn-sm text-white m-2"><b>Contact</b></div>
+
+        </div>
+
       </div>
-      <div class="result-contact">
-        <h3 class="my-1">Contact Me</h3>
-        <p class="my-2">Id love to get in touch!</p>
-        <div routerLink="../contact" class="contact-btn btn btn-sm text-white m-2"><b>Contact</b></div>
+
+      <div class="search-card h-100">
+
+        <img src="assets/images/search/tamu2.jpg" alt="" width="100%">
+
+        <div class="search-card-content">
+
+          <h2 class="pb-2">Texas A&M University</h2>
+          <hr>
+          <a routerLink="../about">about</a>
+          <hr>
+          <a routerLink="../skills">skills</a>
+          <hr>
+          <h6><b>education</b></h6>
+          <hr>
+          <a routerLink="../projects">projects</a>
+
+        </div>
+
       </div>
+
     </div>
-    <div class="search-card h-100">
-      <img src="assets/images/search/tamu2.jpg" alt="" width="100%">
-      <div class="search-card-content">
-        <h2 class="pb-2">Texas A&M University</h2>
-        <hr>
-        <a routerLink="../about">about</a>
-        <hr>
-        <a routerLink="../skills">skills</a>
-        <hr>
-        <h6><b>education</b></h6>
-        <hr>
-        <a routerLink="../projects">projects</a>
-      </div>
-    </div>
+
   </div>
-</div>
