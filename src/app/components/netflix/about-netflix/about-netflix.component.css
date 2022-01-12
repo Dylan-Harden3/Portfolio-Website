@@ -18,7 +18,7 @@ line-height: 30px;
 font-weight: 100;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   *{
     text-align: center;
   }
