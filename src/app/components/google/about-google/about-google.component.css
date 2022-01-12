@@ -76,12 +76,6 @@ h1 {
   }
 }
 
-.skill-intro {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 .col img {
   margin: 0 5px;
 }

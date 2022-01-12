@@ -64,11 +64,6 @@ nav a {
   aspect-ratio: 1/1;
 }
 
-#searchText::before {
-  content: "Aspiring Software Engineer";
-  animation: switch 9s infinite;
-}
-
 span{
 
   animation: blink 1s infinite;
