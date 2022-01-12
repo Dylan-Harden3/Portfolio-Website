@@ -14,7 +14,6 @@ import { GoogleComponent } from './components/google/google/google.component';
 import { AboutNetflixComponent } from './components/netflix/about-netflix/about-netflix.component';
 import { SkillsNetflixComponent } from './components/netflix/skills-netflix/skills-netflix.component';
 import { ProjectsNetflixComponent } from './components/netflix/projects-netflix/projects-netflix.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ContactNetflixComponent } from './components/netflix/contact-netflix/contact-netflix.component';
 import { TeslaComponent } from './components/tesla/tesla/tesla.component';
 import { HeroTeslaComponent } from './components/tesla/hero-tesla/hero-tesla.component';
@@ -98,7 +97,6 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
