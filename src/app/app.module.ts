@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
 
-import { Router, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavbarGoogleComponent } from './components/google/navbar-google/navbar-google.component';
 import { HeroGoogleComponent } from './components/google/hero-google/hero-google.component';
