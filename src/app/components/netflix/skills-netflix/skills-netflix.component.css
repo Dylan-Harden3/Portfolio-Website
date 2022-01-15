@@ -49,3 +49,11 @@ p{
     margin-bottom: 30px;
   }
 }
+
+@media screen and (max-width:325px) {
+
+  #icons img {
+    width:20px;
+  }
+
+}
