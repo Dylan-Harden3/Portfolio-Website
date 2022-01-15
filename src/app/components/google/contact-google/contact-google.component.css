@@ -20,7 +20,7 @@
 h1 {
   color: #424242;
   font: 500 44px/54px Product Sans;
-  font-family: Product Sans;
+  font-family: Product Sans, sans-serif, Roboto;
   font-weight: 500;
   font-size: 44px;
   line-height: 54px;
