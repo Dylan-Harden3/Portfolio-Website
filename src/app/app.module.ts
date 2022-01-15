@@ -27,6 +27,7 @@ import { SkillsSearchComponent } from './components/search/skills-search/skills-
 import { EducationSearchComponent } from './components/search/education-search/education-search.component';
 import { ProjectsSearchComponent } from './components/search/projects-search/projects-search.component';
 import { ContactSearchComponent } from './components/search/contact-search/contact-search.component';
+import { ProjectsMenuComponent } from './components/global/projects-menu/projects-menu.component';
 
 const appRoutes: Routes = [
   {
@@ -93,6 +94,7 @@ const appRoutes: Routes = [
     EducationSearchComponent,
     ProjectsSearchComponent,
     ContactSearchComponent,
+    ProjectsMenuComponent,
   ],
   imports: [
     BrowserModule,

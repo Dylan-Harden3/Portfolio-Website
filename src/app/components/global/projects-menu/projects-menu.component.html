@@ -1,0 +1,13 @@
+<div class="projects-grid py-2">
+
+  <img *ngFor="let project of projects; index as i" src="{{ project.img }}" (click)="toggleSelected(i)" width="75px" class="rounded project-img mx-auto" [class.selected]="project.selected">
+
+  <div *ngIf="displayedProject.selected" class="project-popout rounded p-2">
+
+    <h4>{{ displayedProject.title }}</h4>
+    <p><i>{{ displayedProject.technologies }}</i></p>
+    <p>{{ displayedProject.description }}</p>
+
+  </div>
+
+</div>
